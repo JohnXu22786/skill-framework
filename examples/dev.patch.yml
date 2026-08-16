@@ -1,0 +1,16 @@
+# 开发模式覆盖层示例（方式 C）
+#
+# 用法：
+#   1. 把下面 name 的值改为本插件 src/index.ts 的绝对路径
+#      （dsh 源码环境下，覆盖层中的模块路径按绝对路径解析）。
+#   2. 启动（默认 web profile，可叠加多个 --patch）：
+#        dsh web --patch ./examples/dev.patch.yml
+#
+# 该方式不经过 npm 安装，直接以 TypeScript 源码加载插件，适合在
+# deepseek-harness 源码检出环境中迭代本插件。
+
+- insert:
+    - id: praxis
+      name: /absolute/path/to/skill-framework/src/index.ts
+      config:
+        providerName: praxis-bundled
