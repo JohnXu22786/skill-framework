@@ -1,3 +1,5 @@
+[English](README.en.md)
+
 # dsh-praxis
 
 **Praxis** 是一套面向 DeepSeek Harness（dsh）的工程方法论技能库插件：把资深工程师的工作流程（设计对话、写计划、执行计划、测试先行、系统排障、完成验证、并行分工、代码评审、分支收尾等）固化成一组符合 Agent Skills 开放标准的 `SKILL.md` 技能，以自包含插件的形式接入 dsh 的技能体系。
@@ -31,6 +33,12 @@
 - Node.js ≥ 22（dsh 自身要求；本插件运行时为纯 ESM JavaScript）
 
 ## 安装
+
+### 在 DSH 中安装
+
+```sh
+dsh plugin --profile demo add github:JohnXu22786/skill-framework
+```
 
 ### 方式 A：本地打包后安装（推荐）
 
@@ -176,4 +184,4 @@ skill-framework/
 
 ## 许可
 
-MIT
+本项目基于 [MIT](LICENSE) 许可开源。
